@@ -261,7 +261,7 @@
 
 			<div id="portfolio" class="section-content gallery alternate">
 
-				<!-- 포트폴리오 엔트리: 1. 로그인, 총 관리자 페이지 -->
+				<!-- 포트폴리오 엔트리: 1. 로그인 -->
 				<article role="article" id="work1" class="gallery-item"
 					data-animation="fade-left">
 					<figure role="group" class="gallery-figure">
@@ -272,27 +272,17 @@
 								<!-- Indicators -->
 								<ol class="carousel-indicators">
 									<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
-									<li data-target="#myCarousel1" data-slide-to="1"></li>
 								</ol>
 								<!-- Wrapper for slides -->
 								<div class="carousel-inner">
 									<div class="carousel-item active">
 										<img src="img/works/1.png" alt="Login" style="width: 100%;">
 									</div>
-									<div class="carousel-item">
-										<img src="img/works/31.png" alt="Admin" style="width: 100%;">
-									</div>
 								</div>
-								<!-- Left and right controls -->
-								<a class="carousel-control-prev" href="#myCarousel1"
-									data-slide="prev"> <span class="carousel-control-prev-icon"></span>
-								</a> <a class="carousel-control-next" href="#myCarousel1"
-									data-slide="next"> <span class="carousel-control-next-icon"></span>
-								</a>
 							</div>
 						</div>
 						<figcaption class="gallery-caption">
-							<h3 class="gallery-title">Login & Super Admin</h3>
+							<h3 class="gallery-title">Login</h3>
 							<ul class="gallery-spec">
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Viewport</strong> <span
@@ -319,14 +309,12 @@
 								</p>
 								<p>관리자, 강사, 수강생 별 기능이 분리되어 있으며 로그인 필터를 통해 각 사용자 별 기능을
 									구분했습니다.</p>
-								<p>관리자들을 총괄하는 총 관리자의 관리 페이지에서, 총 관리자는 하나의 계정만 존재하며, 본인의 계정
-									잠금이 불가합니다. 해당 페이지에서 본인의 비밀번호를 변경할 수 있고, 여러 관리자 계정을 관리할 수 있습니다.</p>
 							</div>
 						</figcaption>
 					</figure>
 				</article>
 
-				<!-- 포트폴리오 엔트리: 2. 관리자 - 1. 관리자 대시보드 및 기초정보관리 -->
+				<!-- 포트폴리오 엔트리: 2. 관리자 - 1. 총 관리자 페이지, 관리자 대시보드 및 기초정보관리 -->
 				<article role="article" id="work2" class="gallery-item"
 					data-animation="fade-right">
 					<figure role="group" class="gallery-figure">
@@ -348,10 +336,14 @@
 									<li data-target="#myCarousel2" data-slide-to="9"></li>
 									<li data-target="#myCarousel2" data-slide-to="10"></li>
 									<li data-target="#myCarousel2" data-slide-to="11"></li>
+									<li data-target="#myCarousel2" data-slide-to="12"></li>
 								</ol>
 								<!-- Wrapper for slides -->
 								<div class="carousel-inner">
 									<div class="carousel-item active">
+										<img src="img/works/31.png" alt="Admin" style="width: 100%;">
+									</div>
+									<div class="carousel-item">
 										<img src="img/works/2.png" alt="Admin" style="width: 100%;">
 									</div>
 									<div class="carousel-item">
@@ -415,20 +407,21 @@
 									class="gallery-spec-value">HTML5, CSS3, Bootstrap 4</span></li>
 							</ul>
 							<div id="work2Description" class="workDescription">
-								<p>관리자 대시보드, 기초정보관리, 강사정보관리 페이지입니다.</p>
+								<p>총 관리자 관리, 관리자 대시보드, 기초정보관리, 강사정보관리 페이지입니다.</p>
+								<p>
+									관리자들을 총괄하는 <b>총 관리자의 관리 페이지</b>에서, 여러 관리자 계정을 관리할 수 있습니다.
+								</p>
 								<p>
 									대시보드를 통해 <b>각 강의실 별 진행률</b>을 확인합니다. 각 강의실 별 진행 중인 과정 정보와 수강률을
 									표시했습니다.
 								</p>
-								<p>아래는 기본적인 데이터를 만드는 페이지들입니다. 사람의 얼굴은 사진업로드로 구별이 쉽게하였고, 교재
-									정보는 인터파크 Open API에서 가져옵니다.</p>
+								<p>아래는 기본적인 데이터를 만드는 페이지들입니다. 교재 정보는 인터파크 Open API에서 가져옵니다.</p>
 								<p>
 									관리자는 <b>기초정보 관리</b> - 과정, 과목, 강의실, 교재 정보 관리가 가능합니다. 각 항목들은 조회,
 									추가, 삭제가 가능하며, 과정, 과목, 강의실, 교재 테이블을 기반으로 개설과정, 개설과목 테이블이 생성됩니다.
 								</p>
 								<p>
-									관리자는 <b>강사 정보 관리</b> - 강사 조회, 추가, 수정, 삭제가 가능합니다. 강사 추가 시
-									강의가능과목을 지정해 향후 컬럼에 영향을 줍니다.
+									관리자는 <b>강사 정보 관리</b> - 강사 조회, 추가, 수정, 삭제가 가능합니다.
 								</p>
 							</div>
 						</figcaption>
