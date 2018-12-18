@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Cache-Control" content="max-age=3000, must-revalidate">
 <!-- Description -->
-<title>Portfolio | Web developer Sa Bee Lee</title>
+<title>포트폴리오 | 개발자 이사비</title>
 <meta name="description"
 	content="Web developer Sa Bee Lee's portfolio site.">
 <meta name="keywords"
@@ -42,19 +42,6 @@
 <!-- Favicons -->
 <link rel="shortcut icon" type="image/x-icon"
 	href="img/favicons/sabee-favicon.png" />
-<!-- <link rel="apple-touch-icon" sizes="180x180"
-	href="./img/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png"
-	href="./img/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png"
-	href="./img/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="./img/favicons/manifest.json">
-<link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg"
-	color="#5bbad5">
-<link rel="shortcut icon" href="./img/favicons/favicon.ico">
-<meta name="msapplication-config"
-	content="./img/favicons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff"> -->
 
 <!-- 인트로를 위한 css 추가 -->
 <link rel="stylesheet" href="css/style2.css">
@@ -85,15 +72,6 @@
 		});
 	});
 </script>
-<script>
-	$(document).ready(function() {
-		$('a').on('click touchend', function(e) {
-			var el = $(this);
-			var link = el.attr('href');
-			window.location = link;
-		});
-	});
-</script>
 
 <!-- 캐러셀을 위한 부트스트랩, js 추가 -->
 <link rel="stylesheet"
@@ -115,6 +93,10 @@
 		Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	font-size: 15px;
 }
+
+.gallery-spec {
+	font-size: 15px;
+}
 </style>
 
 </head>
@@ -124,7 +106,7 @@
 	<main role="main" id="page" class="l-page">
 	<section role="banner" id="hero" class="l-section">
 		<div class="hero-main">
-
+			<!-- 인트로 -->
 			<div class="intro scroll">
 				<div class="intro_txt">
 					<h1>
@@ -295,10 +277,12 @@
 									class="gallery-spec-value">MySQL Workbench, Eclipse</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Function skill</strong> <span
-									class="gallery-spec-value">Javascript, jQuery, JSP</span></li>
+									class="gallery-spec-value">Spring MVC, Spring JDBC,
+										MyBatis</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Design skill</strong> <span
-									class="gallery-spec-value">HTML5, CSS3, Bootstrap 4</span></li>
+									class="gallery-spec-value">HTML5, CSS3, Bootstrap 4,
+										jQuery</span></li>
 							</ul>
 							<div id="work1Description" class="workDescription">
 								<p>
@@ -307,11 +291,19 @@
 								<p>
 									본 시스템은 <b>교육기관에서 교육과정을 수강한 수강생들에 대한 과목별 성적 처리를 목표</b>로 합니다.
 								</p>
-								<p>관리자, 강사, 수강생 별 기능이 분리되어 있으며 로그인 필터를 통해 각 사용자 별 기능을
-									구분했습니다.</p>
+								<p>
+									<b>관리자, 강사, 수강생 별 기능이 분리</b>되어 있으며 <b>로그인 필터</b>를 통해 각 사용자 별
+									기능을 구분했습니다.
+								</p>
 							</div>
 						</figcaption>
 					</figure>
+					<div class="ui-group" style="margin-top: 40px">
+						<a role="button" class="ui-button" href="./portfolio-sist/"
+							target="_blank">Demo</a> <a role="button" class="ui-button"
+							href="https://github.com/xabi-developer/portfolio-sist/index"
+							target="_blank">Repos</a>
+					</div>
 				</article>
 
 				<!-- 포트폴리오 엔트리: 2. 관리자 - 1. 총 관리자 페이지, 관리자 대시보드 및 기초정보관리 -->
@@ -400,32 +392,36 @@
 									class="gallery-spec-value">MySQL Workbench, Eclipse</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Function skill</strong> <span
-									class="gallery-spec-value">Javascript, jQuery, JSP,
-										Spring MVC</span></li>
+									class="gallery-spec-value">Spring MVC, Spring JDBC,
+										MyBatis</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Design skill</strong> <span
-									class="gallery-spec-value">HTML5, CSS3, Bootstrap 4</span></li>
+									class="gallery-spec-value">HTML5, CSS3, Bootstrap 4,
+										jQuery</span></li>
 							</ul>
 							<div id="work2Description" class="workDescription">
 								<p>총 관리자 관리, 관리자 대시보드, 기초정보관리, 강사정보관리 페이지입니다.</p>
+								<p>한 계정만 존재하는 총 관리자의 관리 페이지에서, 여러 관리자 계정을 관리할 수 있습니다.</p>
 								<p>
-									관리자들을 총괄하는 <b>총 관리자의 관리 페이지</b>에서, 여러 관리자 계정을 관리할 수 있습니다.
+									대시보드를 통해 <b>각 강의실 별 진행률</b> - 각 강의실 별 진행 중인 과정 정보와 수강률을 표시했습니다.
 								</p>
 								<p>
-									대시보드를 통해 <b>각 강의실 별 진행률</b>을 확인합니다. 각 강의실 별 진행 중인 과정 정보와 수강률을
-									표시했습니다.
-								</p>
-								<p>아래는 기본적인 데이터를 만드는 페이지들입니다. 교재 정보는 인터파크 Open API에서 가져옵니다.</p>
-								<p>
-									관리자는 <b>기초정보 관리</b> - 과정, 과목, 강의실, 교재 정보 관리가 가능합니다. 각 항목들은 조회,
-									추가, 삭제가 가능하며, 과정, 과목, 강의실, 교재 테이블을 기반으로 개설과정, 개설과목 테이블이 생성됩니다.
+									다음은 <b>기본적인 데이터</b>를 만드는 페이지들입니다. 관리자는 각각의 정보를 조회, 추가, 수정 삭제할 수
+									있습니다. 과정, 과목, 강의실, 교재 테이블을 기반으로 개설과정, 개설과목 테이블이 생성됩니다.
 								</p>
 								<p>
-									관리자는 <b>강사 정보 관리</b> - 강사 조회, 추가, 수정, 삭제가 가능합니다.
+									교재 정보는 인터파크 <b>Open API</b>에서 가져옵니다.
 								</p>
 							</div>
 						</figcaption>
 					</figure>
+					<div class="ui-group" style="margin-top: 40px">
+						<a role="button" class="ui-button"
+							href="./portfolio-sist/views/admin/admin_0/admin_0.jsp"
+							target="_blank">Demo</a> <a role="button" class="ui-button"
+							href="https://github.com/xabi-developer/portfolio-sist/views/admin/admin_0/admin_0.jsp"
+							target="_blank">Repos</a>
+					</div>
 				</article>
 
 				<!-- 포트폴리오 엔트리: 2. 관리자 - 2. 관리자 개설과정관리, 개설과목관리, 수강생관리, 성적조회 -->
@@ -549,33 +545,31 @@
 									class="gallery-spec-value">MySQL Workbench, Eclipse</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Function skill</strong> <span
-									class="gallery-spec-value">Javascript, jQuery, JSP,
-										Spring MVC</span></li>
+									class="gallery-spec-value">Spring MVC, Spring JDBC,
+										MyBatis</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Design skill</strong> <span
-									class="gallery-spec-value">HTML5, CSS3, Bootstrap 4</span></li>
+									class="gallery-spec-value">HTML5, CSS3, Bootstrap 4,
+										jQuery</span></li>
 							</ul>
 							<div id="work3Description" class="workDescription">
 								<p>관리자 개설과정관리, 개설과목관리, 수강생관리, 성적조회 페이지입니다.</p>
-								<p>앞의 기본적인 데이터를 이용해 실제 성적관리에 사용되는 데이터를 만드는 페이지들입니다.</p>
 								<p>
-									관리자는 <b>개설과정 관리</b> - 개설과정 조회, 추가, 수정, 삭제가 가능합니다.
+									앞의 기본적인 데이터를 이용해 <b>실제 성적관리에 사용되는 데이터</b>를 관리하는 페이지들입니다. 관리자는
+									각각의 정보를 조회, 추가, 수정, 삭제할 수 있습니다.
 								</p>
-								<p>
-									관리자는 <b>개설과목 관리</b> - 개설과목 조회, 추가, 수정, 삭제가 가능합니다.
-								</p>
-								<p>
-									관리자는 <b>수강생 관리</b> - 각 수강생을 조회, 추가, 수정, 삭제가 가능합니다. 진행예정인 과정에
-									수강생을 등록하거나 취소합니다. 진행중인 과정에서 수강생을 중도탈락처리할 수 있습니다. 제약조건으로 묶여있을 시
-									삭제가 불가능하게 버튼을 비활성화 처리합니다.
-								</p>
-								<p>
-									관리자는 <b>성적 조회</b> - 개설 과정에 따른 과목 및 성적 조회가 가능합니다. 시험과 성적 정보를
-									확인합니다.
-								</p>
+								<p>수강생 관리에서는 진행예정인 과정에 수강생을 등록하거나 취소합니다. 진행중인 과정에서 수강생을
+									중도탈락처리할 수 있습니다. 제약조건으로 묶여있을 시 삭제가 불가능하게 버튼을 비활성화 처리합니다.</p>
 							</div>
 						</figcaption>
 					</figure>
+					<div class="ui-group" style="margin-top: 40px">
+						<a role="button" class="ui-button"
+							href="./portfolio-sist/views/admin/admin/admin_4/admin_4_1.jsp"
+							target="_blank">Demo</a> <a role="button" class="ui-button"
+							href="https://github.com/xabi-developer/portfolio-sist/views/admin/admin_4/admin_4_1.jsp"
+							target="_blank">Repos</a>
+					</div>
 				</article>
 
 				<!-- 포트폴리오 엔트리: 3. 강사 페이지 -->
@@ -656,36 +650,31 @@
 									class="gallery-spec-value">MySQL Workbench, Eclipse</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Function skill</strong> <span
-									class="gallery-spec-value">Javascript, jQuery, JSP,
-										Spring MVC</span></li>
+									class="gallery-spec-value">Spring MVC, Spring JDBC,
+										MyBatis</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Design skill</strong> <span
-									class="gallery-spec-value">HTML5, CSS3, Bootstrap 4</span></li>
+									class="gallery-spec-value">HTML5, CSS3, Bootstrap 4,
+										jQuery</span></li>
 							</ul>
 							<div id="work4Description" class="workDescription">
 								<p>강사 대시보드, 개인정보확인, 강의스케쥴조회, 시험 및 배점관리, 성적관리 페이지입니다.</p>
 								<p>
-									대시보드를 통해 <b>강사의 과정 진행률</b>을 확인합니다. 각 과정별 진행 중인 과정 정보와 진행 현황을 보기
-									쉽게 표시, 수강률을 나타냈습니다.
+									대시보드를 통해 <b>강사의 과정 진행률</b> - 각 과정별 진행 중인 과정 정보와 진행 현황을 보기 쉽게
+									표시하고 수강률을 나타냈습니다.
 								</p>
-								<p>
-									강사는 <b>개인 정보 확인</b> - 본인의 개인 정보 확인, 비밀번호 변경, 강의 가능 과목 확인이
-									가능합니다.
-								</p>
-								<p>
-									강사는 <b>강의 스케쥴 조회</b> - 각 과정의 과목과 수강생 목록을 강의중, 강의예정, 강의종료로 나눠 확인
-									가능합니다.
-								</p>
-								<p>
-									강사는 <b>시험 및 배점 관리</b> - 과정에서 과목의 시험 문제를 추가해 시험 파일을 업로드하고, 시험 및
-									배점 정보를 등록합니다.
-								</p>
-								<p>
-									강사는 <b>성적 관리</b> - 수강생의 성적을 조회, 등록, 삭제할 수 있습니다.
-								</p>
+								<p>강사는 관리자가 생성한 데이터를 기반으로 정보를 조회하거나, 시험 및 배점, 성적 정보를 추가, 수정,
+									삭제할 수 있습니다.</p>
 							</div>
 						</figcaption>
 					</figure>
+					<div class="ui-group" style="margin-top: 40px">
+						<a role="button" class="ui-button"
+							href="./portfolio-sist/views/teacher/teacher_0/teacher_0.jsp"
+							target="_blank">Demo</a> <a role="button" class="ui-button"
+							href="https://github.com/xabi-developer/portfolio-sist/views/teacher/teacher_0/teacher_0.jsp"
+							target="_blank">Repos</a>
+					</div>
 				</article>
 
 				<!-- 포트폴리오 엔트리: 4. 수강생 페이지 -->
@@ -745,28 +734,31 @@
 									class="gallery-spec-value">MySQL Workbench, Eclipse</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Function skill</strong> <span
-									class="gallery-spec-value">Javascript, jQuery, JSP,
-										Spring MVC</span></li>
+									class="gallery-spec-value">Spring MVC, Spring JDBC,
+										MyBatis</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Design skill</strong> <span
-									class="gallery-spec-value">HTML5, CSS3, Bootstrap 4</span></li>
+									class="gallery-spec-value">HTML5, CSS3, Bootstrap 4,
+										jQuery</span></li>
 							</ul>
 							<div id="work5Description" class="workDescription">
 								<p>수강생 대시보드, 개인정보확인, 성적조회 페이지입니다.</p>
 								<p>
-									대시보드를 통해 <b>수강생의 과정 진행률</b>을 확인합니다. 각 과정별 진행 중인 과정 정보와 진행 현황을
-									보기 쉽게 표시하고, 함께 달력을 보여줍니다.
+									대시보드를 통해 <b>수강생의 과정 진행률</b> - 각 과정별 진행 중인 과정 정보와 진행 현황을 보기 쉽게
+									표시하고, 함께 달력을 보여줍니다.
 								</p>
-								<p>
-									수강생은 <b>개인 정보 확인</b> - 본인의 개인 정보 확인, 비밀번호 변경, 수강 목록 확인이 가능합니다.
-								</p>
-								<p>
-									수강생은 <b>성적 조회</b> - 각 과정 조회를 통해 본인의 성적을 조회할 수 있습니다. 또한 각 과목 별
-									시험문제를 다운받을 수 있습니다.
-								</p>
+								<p>수강생은 본인의 정보를 조회하고 수정할 수 있습니다. 각 과정 조회를 통해 본인의 성적을 조회하고, 각
+									과목 별 시험문제를 다운받을 수 있습니다.</p>
 							</div>
 						</figcaption>
 					</figure>
+					<div class="ui-group" style="margin-top: 40px">
+						<a role="button" class="ui-button"
+							href="./portfolio-sist/views/student/student_0/student_0.jsp"
+							target="_blank">Demo</a> <a role="button" class="ui-button"
+							href="https://github.com/xabi-developer/portfolio-sist/views/student/student_0/student_0.jsp"
+							target="_blank">Repos</a>
+					</div>
 				</article>
 			</div>
 		</div>
@@ -826,39 +818,21 @@
 				<h2 class="footer-heading">Contacts</h2>
 				<div class="footer-content">
 					<ul class="unstyled-list">
-						<li>
-							<!--
-                            --> <a href="mailto:realbaroque@live.co.kr"
-							title="이메일"> <!--
-                                --> <i class="fi icon-email"></i> <!--
-                                --> <span class="iconed-text">sabee_castle@naver.com</span>
-								<!--
-                            -->
-						</a> <!--
-                        -->
-						</li>
-						<li>
-							<!--
-                            --> <span title="전화"> <!--
-                                --> <i class="fi icon-telephone"></i> <!--
-                                --> <span class="iconed-text">+82
-									10 9868 7741</span> <!--
-                            -->
-						</span> <!--
-                        -->
-						</li>
-						<li>
-							<!--
-                            --> <a
-							href="https://github.com/xabi-developer" target="_blank"
-							title="깃허브"> <!--
-                                --> <i class="fi icon-light-bulb"></i> <!--
-                                --> <span class="iconed-text">gitHub
-									account</span> <!--
-                            -->
-						</a> <!--
-                        -->
-						</li>
+						<li><a href="mailto:sabee_castle@naver.com" title="이메일">
+								<i class="fi icon-email"></i> <span class="iconed-text">sabee_castle@naver.com</span>
+						</a></li>
+						<li><span title="전화"> <i class="fi icon-telephone"></i>
+								<span class="iconed-text">+82 10 9868 7741</span>
+
+						</span></li>
+						<li><a href="https://github.com/xabi-developer"
+							target="_blank" title="깃허브"> <i class="fi icon-light-bulb"></i>
+								<span class="iconed-text">gitHub account</span>
+						</a></li>
+						<li><a href="https://blog.naver.com/sabee_castle"
+							target="_blank" title="블로그"> <i class="fi icon-light-bulb"></i>
+								<span class="iconed-text">blog - #샤비수길 #프로그래밍공부</span>
+						</a></li>
 					</ul>
 				</div>
 			</div>
