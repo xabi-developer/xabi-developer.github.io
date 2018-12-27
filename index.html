@@ -91,7 +91,8 @@
 	font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
 		"Malgun Gothic", Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
 		Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-	font-size: 15px;
+	font-size: 14px;
+	margin-bottom: 30px;
 }
 
 .gallery-spec {
@@ -247,7 +248,7 @@
 				<article role="article" id="work1" class="gallery-item"
 					data-animation="fade-left">
 					<figure role="group" class="gallery-figure">
-						<div class="gallery-image" style="margin-right: 25px">
+						<div class="gallery-image">
 							<!-- 캐러셀 -->
 							<div id="myCarousel1" class="carousel slide gallery-image-thumb"
 								data-ride="carousel" aria-describedby="work1Description">
@@ -258,7 +259,7 @@
 								<!-- Wrapper for slides -->
 								<div class="carousel-inner" style="border: 1px solid #F5F5F5">
 									<div class="carousel-item active">
-										<img src="img/works/1.png" alt="Login" style="width: 100%;">
+										<img src="img/works/1.png" alt="Login" style="width: 100%">
 									</div>
 								</div>
 							</div>
@@ -277,12 +278,10 @@
 									class="gallery-spec-value">MySQL Workbench, Eclipse</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Function skill</strong> <span
-									class="gallery-spec-value">Spring MVC, Spring JDBC,
-										MyBatis</span></li>
+									class="gallery-spec-value">Spring MVC&JDBC, MyBatis</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Design skill</strong> <span
-									class="gallery-spec-value">HTML5, CSS3, Bootstrap 4,
-										jQuery</span></li>
+									class="gallery-spec-value">HTML, CSS, Bootstrap, jQuery</span></li>
 							</ul>
 							<div id="work1Description" class="workDescription">
 								<p>
@@ -292,18 +291,37 @@
 									본 시스템은 <b>교육기관에서 교육과정을 수강한 수강생들에 대한 과목별 성적 처리를 목표</b>로 합니다.
 								</p>
 								<p>
-									<b>관리자, 강사, 수강생 별 기능이 분리</b>되어 있으며 <b>로그인 필터</b>를 통해 각 사용자 별
-									기능을 구분했습니다.
+									<b>관리자, 강사, 수강생 별 기능이 분리</b>되어 있으며 <b>인터셉터를 통한 로그인</b>처리로 각 사용자
+									별 기능을 구분했습니다.
 								</p>
 							</div>
 							<div class="ui-group">
 								<a role="button" class="ui-button" href="./portfolio-sist/"
 									target="_blank">Demo</a> <a role="button" class="ui-button"
-									href="https://xabi-developer.github.io/portfolio-sist/views/admin/admin_0/admin_0.html"
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/index.html"
 									target="_blank">Repos</a>
 							</div>
 						</figcaption>
 					</figure>
+					<table class="gallery-table">
+						<thead>
+							<tr>
+								<th class="gallery-table-col category">Category</th>
+								<th class="gallery-table-col source">Source</th>
+								<th class="gallery-table-col keywords">Related keywords</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td data-th="Category"><span class="categ html">Tech</span></td>
+								<td data-th="Source"><a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/index.html"
+									target="_blank">index</a></td>
+								<td data-th="Related Keywords">Spring MVC, Spring JDBC,
+									MyBatis, CRUD, Submit Action, Interceptor, Login</td>
+							</tr>
+						</tbody>
+					</table>
 				</article>
 
 				<!-- 포트폴리오 엔트리: 2. 관리자 - 1. 총 관리자 페이지, 관리자 대시보드 및 기초정보관리 -->
@@ -392,16 +410,14 @@
 									class="gallery-spec-value">MySQL Workbench, Eclipse</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Function skill</strong> <span
-									class="gallery-spec-value">Spring MVC, Spring JDBC,
-										MyBatis</span></li>
+									class="gallery-spec-value">Spring MVC&JDBC, MyBatis</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Design skill</strong> <span
-									class="gallery-spec-value">HTML5, CSS3, Bootstrap 4,
-										jQuery</span></li>
+									class="gallery-spec-value">HTML, CSS, Bootstrap, jQuery</span></li>
 							</ul>
 							<div id="work2Description" class="workDescription">
 								<p>총 관리자 관리, 관리자 대시보드, 기초정보관리, 강사정보관리 페이지입니다.</p>
-								<p>한 계정만 존재하는 총 관리자의 관리 페이지에서, 여러 관리자 계정을 관리할 수 있습니다.</p>
+								<p>한 계정만 존재하는 총 관리자의 관리 페이지에서, 여러 관리자 계정을 관리합니다.</p>
 								<p>
 									대시보드를 통해 <b>각 강의실 별 진행률</b> - 각 강의실 별 진행 중인 과정 정보와 수강률을 표시했습니다.
 								</p>
@@ -413,9 +429,46 @@
 									교재 정보는 인터파크 <b>Open API</b>에서 가져옵니다.
 								</p>
 							</div>
+							<div class="ui-group">
+								<a role="button" class="ui-button"
+									href="./portfolio-sist/views/admin/admin_0/admin_0.html"
+									target="_blank">Demo</a> <a role="button" class="ui-button"
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_0/admin_0.jsp"
+									target="_blank">Repos</a>
+							</div>
 						</figcaption>
 					</figure>
-
+					<table class="gallery-table">
+						<thead>
+							<tr>
+								<th class="gallery-table-col category">Category</th>
+								<th class="gallery-table-col source">Source</th>
+								<th class="gallery-table-col keywords">Related keywords</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td data-th="Category"><span class="categ html">Tech</span></td>
+								<td data-th="Source"><a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/adminSuper/adminSuper.jsp"
+									target="_blank">adminSuper</a></td>
+								<td data-th="Related Keywords">Spring MVC, Spring JDBC,
+									MyBatis, CRUD</td>
+							</tr>
+							<tr>
+								<td data-th="Category"><span class="categ html">Tech</span></td>
+								<td data-th="Source"><a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_0/admin_0.jsp"
+									target="_blank">admin</a></td>
+								<td data-th="Related Keywords">Spring MVC, Spring JDBC,
+									MyBatis, CRUD, <a href="https://developers.google.com/chart/"
+									target="_blank">Google Chart Open API</a>, <a
+									href="http://book.interpark.com/blog/api/openApiMain.rdo"
+									target="_blank">Interpark Open API</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</article>
 
 				<!-- 포트폴리오 엔트리: 2. 관리자 - 2. 관리자 개설과정관리, 개설과목관리, 수강생관리, 성적조회 -->
@@ -539,25 +592,106 @@
 									class="gallery-spec-value">MySQL Workbench, Eclipse</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Function skill</strong> <span
-									class="gallery-spec-value">Spring MVC, Spring JDBC,
-										MyBatis</span></li>
+									class="gallery-spec-value">Spring MVC&JDBC, MyBatis</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Design skill</strong> <span
-									class="gallery-spec-value">HTML5, CSS3, Bootstrap 4,
-										jQuery</span></li>
+									class="gallery-spec-value">HTML, CSS, Bootstrap, jQuery</span></li>
 							</ul>
 							<div id="work3Description" class="workDescription">
 								<p>관리자 개설과정관리, 개설과목관리, 수강생관리, 성적조회 페이지입니다.</p>
 								<p>
-									앞의 기본적인 데이터를 이용해 <b>실제 성적관리에 사용되는 데이터</b>를 관리하는 페이지들입니다. 관리자는
+									앞의 기본적인 데이터를 이용해 <b>실제 성적관리에 사용되는 데이터</b>를 관리하는 페이지입니다. 관리자는
 									각각의 정보를 조회, 추가, 수정, 삭제할 수 있습니다.
 								</p>
 								<p>수강생 관리에서는 진행예정인 과정에 수강생을 등록하거나 취소합니다. 진행중인 과정에서 수강생을
 									중도탈락처리할 수 있습니다. 제약조건으로 묶여있을 시 삭제가 불가능하게 버튼을 비활성화 처리합니다.</p>
 							</div>
+							<div class="ui-group">
+								<a role="button" class="ui-button"
+									href="./portfolio-sist/views/admin/admin_4/admin_4_1.html"
+									target="_blank">Demo</a> <a role="button" class="ui-button"
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_4/admin_4_1.jsp"
+									target="_blank">Repos</a>
+							</div>
 						</figcaption>
 					</figure>
-
+					<table class="gallery-table">
+						<thead>
+							<tr>
+								<th class="gallery-table-col category">Category</th>
+								<th class="gallery-table-col source">Source</th>
+								<th class="gallery-table-col keywords">Related keywords</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td data-th="Category"><span class="categ html">Tech</span></td>
+								<td data-th="Source"><a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_4/admin_4_1.jsp"
+									target="_blank">admin_4_1.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_4/admin_4_2.jsp"
+									target="_blank">admin_4_2.jsp</a></td>
+								<td data-th="Related Keywords">Spring MVC, Spring JDBC,
+									MyBatis, CRUD, Bootstrap Hover, <a
+									href="http://book.interpark.com/blog/api/openApiMain.rdo"
+									target="_blank">Interpark Open API</a>
+								</td>
+							</tr>
+							<tr>
+								<td data-th="Category"><span class="categ html">Tech</span></td>
+								<td data-th="Source"><a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_5/admin_5_1.jsp"
+									target="_blank">admin_5_1.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_5/admin_5_2.jsp"
+									target="_blank">admin_5_2.jsp</a></td>
+								<td data-th="Related Keywords">Spring MVC, Spring JDBC,
+									MyBatis, CRUD, Bootstrap Hover, <a
+									href="http://book.interpark.com/blog/api/openApiMain.rdo"
+									target="_blank">Interpark Open API</a>
+								</td>
+							</tr>
+							<tr>
+								<td data-th="Category"><span class="categ html">Tech</span></td>
+								<td data-th="Source"><a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_6/admin_sub1/admin_6_1_1.jsp"
+									target="_blank">admin_6_1_1.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_6/admin_sub2/admin_6_2_1.jsp"
+									target="_blank">admin_6_2_1.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_6/admin_sub2/admin_6_2_2.jsp"
+									target="_blank">admin_6_2_2.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_6/admin_sub3/admin_6_3_1.jsp"
+									target="_blank">admin_6_3_1.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_6/admin_sub3/admin_6_3_2.jsp"
+									target="_blank">admin_6_3_2.jsp</a></td>
+								<td data-th="Related Keywords">Spring MVC, Spring JDBC,
+									MyBatis, CRUD, Bootstrap Hover, <a
+									href="http://book.interpark.com/blog/api/openApiMain.rdo"
+									target="_blank">Interpark Open API</a>
+								</td>
+							</tr>
+							<tr>
+								<td data-th="Category"><span class="categ html">Tech</span></td>
+								<td data-th="Source"><a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_7/admin_sub1/admin_7_1_1.jsp"
+									target="_blank">admin_7_1_1.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_7/admin_sub1/admin_7_1_2.jsp"
+									target="_blank">admin_7_1_2.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_7/admin_sub1/admin_7_1_3.jsp"
+									target="_blank">admin_7_1_3.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_7/admin_sub2/admin_7_2_1.jsp"
+									target="_blank">admin_7_2_1.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_7/admin_sub2/admin_7_2_2.jsp"
+									target="_blank">admin_7_2_2.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/admin/admin_7/admin_sub2/admin_7_2_3.jsp"
+									target="_blank">admin_7_2_3.jsp</a></td>
+								<td data-th="Related Keywords">Spring MVC, Spring JDBC,
+									MyBatis, CRUD, Bootstrap Hover, <a
+									href="http://book.interpark.com/blog/api/openApiMain.rdo"
+									target="_blank">Interpark Open API</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</article>
 
 				<!-- 포트폴리오 엔트리: 3. 강사 페이지 -->
@@ -638,12 +772,10 @@
 									class="gallery-spec-value">MySQL Workbench, Eclipse</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Function skill</strong> <span
-									class="gallery-spec-value">Spring MVC, Spring JDBC,
-										MyBatis</span></li>
+									class="gallery-spec-value">Spring MVC&JDBC, MyBatis</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Design skill</strong> <span
-									class="gallery-spec-value">HTML5, CSS3, Bootstrap 4,
-										jQuery</span></li>
+									class="gallery-spec-value">HTML, CSS, Bootstrap, jQuery</span></li>
 							</ul>
 							<div id="work4Description" class="workDescription">
 								<p>강사 대시보드, 개인정보확인, 강의스케쥴조회, 시험 및 배점관리, 성적관리 페이지입니다.</p>
@@ -656,7 +788,44 @@
 							</div>
 						</figcaption>
 					</figure>
-
+					<table class="gallery-table">
+						<thead>
+							<tr>
+								<th class="gallery-table-col category">Category</th>
+								<th class="gallery-table-col source">Source</th>
+								<th class="gallery-table-col keywords">Related keywords</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td data-th="Category"><span class="categ css">Tech</span></td>
+								<td data-th="Source"><a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/teacher/teacher_0/teacher_0.jsp"
+									target="_blank">teacher_0.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/teacher/teacher_1/teacher_1.jsp"
+									target="_blank">teacher_1.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/teacher/teacher_2/teacher_2_1.jsp"
+									target="_blank">teacher_2_1.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/teacher/teacher_2/teacher_2_2.jsp"
+									target="_blank">teacher_2_2.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/teacher/teacher_3/teacher_3_1.jsp"
+									target="_blank">teacher_3_1.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/teacher/teacher_3/teacher_3_2.jsp"
+									target="_blank">teacher_3_2.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/teacher/teacher_4/teacher_4_1.jsp"
+									target="_blank">teacher_4_1.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/teacher/teacher_4/teacher_4_2.jsp"
+									target="_blank">teacher_4_2.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/teacher/teacher_4/teacher_4_3.jsp"
+									target="_blank">teacher_4_3.jsp</a></td>
+								<td data-th="Related Keywords">Spring MVC, Spring JDBC,
+									MyBatis, CRUD, Bootstrap Hover, <a
+									href="http://book.interpark.com/blog/api/openApiMain.rdo"
+									target="_blank">Interpark Open API</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</article>
 
 				<!-- 포트폴리오 엔트리: 4. 수강생 페이지 -->
@@ -716,12 +885,10 @@
 									class="gallery-spec-value">MySQL Workbench, Eclipse</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Function skill</strong> <span
-									class="gallery-spec-value">Spring MVC, Spring JDBC,
-										MyBatis</span></li>
+									class="gallery-spec-value">Spring MVC&JDBC, MyBatis</span></li>
 								<li class="gallery-spec-item"><strong
 									class="gallery-spec-key">Design skill</strong> <span
-									class="gallery-spec-value">HTML5, CSS3, Bootstrap 4,
-										jQuery</span></li>
+									class="gallery-spec-value">HTML, CSS, Bootstrap, jQuery</span></li>
 							</ul>
 							<div id="work5Description" class="workDescription">
 								<p>수강생 대시보드, 개인정보확인, 성적조회 페이지입니다.</p>
@@ -734,7 +901,34 @@
 							</div>
 						</figcaption>
 					</figure>
-
+					<table class="gallery-table">
+						<thead>
+							<tr>
+								<th class="gallery-table-col category">Category</th>
+								<th class="gallery-table-col source">Source</th>
+								<th class="gallery-table-col keywords">Related keywords</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td data-th="Category"><span class="categ css">Tech</span></td>
+								<td data-th="Source"><a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/student/student_0/student_0.jsp"
+									target="_blank">student_0.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/student/student_1/student_1.jsp"
+									target="_blank">student_1.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/student/student_2/student_2_1.jsp"
+									target="_blank">student_2_1.jsp</a> <a
+									href="https://github.com/xabi-developer/xabi-developer.github.io/blob/master/portfolio-sist/views/student/student_2/student_2_2.jsp"
+									target="_blank">student_2_2.jsp</a></td>
+								<td data-th="Related Keywords">Spring MVC, Spring JDBC,
+									MyBatis, CRUD, Bootstrap Hover, <a
+									href="http://book.interpark.com/blog/api/openApiMain.rdo"
+									target="_blank">Interpark Open API</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</article>
 			</div>
 		</div>
